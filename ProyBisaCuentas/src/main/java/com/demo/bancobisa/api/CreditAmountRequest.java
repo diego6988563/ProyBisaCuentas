@@ -35,7 +35,7 @@ public class CreditAmountRequest implements Serializable {
 
     @Min(0)
     @NotNull
-    @Schema(description = "Saldo de dinero", required = true, example = "100")
+    @Schema(description = "Saldo de dinero", required = true, example = "10")
     private Double amount;
 
     @Min(0)

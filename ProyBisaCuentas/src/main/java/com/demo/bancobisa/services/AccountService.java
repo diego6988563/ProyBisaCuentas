@@ -54,7 +54,6 @@ public class AccountService implements AccountApi {
     public ResponseEntity<BaseResponse<CreditAmountResponse>> creditAmount(CreditAmountRequest request) throws CustomException {
 
         Account account = accountRepository.findByAccountNumber(request.getUserCode(), request.getAccountNumber())
-                .filter(predicate -> predicate.getState().contentEquals("HOLDED"))
                 .map(mapper -> AccountMapper.mapperToAccount(mapper))
                 .orElseThrow(() -> new CustomException("Cuenta no encontrada", HttpStatus.BAD_REQUEST));
 
