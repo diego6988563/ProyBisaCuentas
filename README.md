@@ -1,0 +1,2 @@
+# ProyBisaCuentas
+Proyecto EVALUACIÓN DE CAPACIDADES TÉCNICAS
